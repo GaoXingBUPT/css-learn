@@ -23,6 +23,12 @@
     > wrap 换行
     
     > wrap-reverse 沿着交叉轴的反方向换行
-
+## flex布局-align-items属性
+ * align-items - 项目在交叉轴上如何对齐
+    > flex-start - 交叉轴的起点对齐
+    > flex-end - 交叉轴的终点对齐
+    > center - 交叉轴中点对齐
+    > baseline - 项目的第一行文字的基线对齐
+    > strench - 如果项目未设置高度或设为auto，将占满整个容器的高度（！默认值）
 
 
