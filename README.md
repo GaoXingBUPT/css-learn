@@ -63,3 +63,11 @@
     > 元素从一种样式逐渐改变为另一种样式的效果
 
     > transition: 变换属性，变换时长，时间曲线(默认ease)，延迟(默认0)
+
+  * animation
+
+    > `@keyframes animationName {}`
+
+    > animation: 动画名称，动画时常，动画时间曲线（默认ease），延迟（默认0），播放次数（默认1），动画方向（默认normal），是否暂停动画（默认running）
+
+    > loading动画 `https://www.html5tricks.com/demo/css3-loading-cool-styles/index.html`
