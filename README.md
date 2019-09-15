@@ -52,11 +52,21 @@
 
 ## css3
 
-  * 伪元素 ::after ::before
+  * 伪元素 ::after(:after) ::before(:before)
+
+    > p:before 	在每个 <p> 元素的内容之前插入内容。
+
+    > 默认 inline
 
     > 这两个伪类下特有的属性content ，用于在 CSS 渲染中向元素逻辑上的头部或尾部添加内容。
 
     > 伪元素如果没有设置“content”属性，伪元素是无用的!!!可以设置content属性值为空，仅仅把他当做一个盒子。
+
+  * transform
+
+    > 对元素进行位移、旋转、缩放、倾斜操作，支持 2D 或者 3D 转换。
+
+    > 是影响内部元素的，即一个元素设置了 transform 旋转、斜切等属性，其内部元素跟随变换。这时常常使用一个 absolute 定位的伪元素设置 transform 属性实现平行四边形、梯形、菱形等，不影响内部元素的效果。
 
   * transition
 
