@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function findLastLine(arr){
+      if(arr.length<2 || arr[0]!=="R" || arr[arr.length-1]!=="L"){
+        return ""
+      } 
+      let res=Array(arr.length).fill(0)
+      var indexBbbbb
+      var indexOfaaaa
+      for(let i =0;i<arr.length;i++){
+        //indexOfL=arr.indexOf("L",0)
+        if(arr[i]==="R"){
+          indexOfaaaa = String.prototype.indexOf.call(arr,"L",i);
+          var cha = indexOfaaaa - i;
+          (cha & 1) ? (++res[indexOfaaaa-1]) : (++res[indexOfaaaa]) 
+          //((indexOfaaaa-i)&1) ? (++res[indexOfaaaa-1]) : (++res[indexOfaaaa]) 
+        }else{
+          indexBbbbb = String.prototype.lastIndexOf.call(arr,"R",i);
+          var bcha = i - indexBbbbb;
+          //indexOfR=arr.lastIndexOf("R",i)
+          // if(cha & 1){
+          //   res[indexOfbbbbb+1] += 1
+          // }else{
+          //   res[indexOfbbbbb] += 1
+          // }
+          (bcha & 1) ? (++res[indexBbbbb+1] ) : (++res[indexBbbbb]);
+        }
+      }
+      return res
+    }
+    console.log(findLastLine("RRRRLRLRL"))
+  </script>
+</body>
+</html>
