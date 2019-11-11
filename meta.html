@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <meta name='author' content='gaoxing'>
+  <title>🍋</title>
+  <style>
+     *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background: pink;
+      display: inline-block;
+    }
+    body{
+      /* font-size: 0; */
+    }
+  </style>
+  <script>
+    // (function (doc, win) {
+    //   var docEl = win.document.documentElement;
+    //   var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    //   var metaEl = doc.querySelector('meta[name="viewport"]');
+    //   var dpr = 0;
+    //   var scale = 0;
+
+    //   // 对iOS设备进行dpr的判断，对于Android系列，始终认为其dpr为1
+    //   if (!dpr && !scale) {
+    //     var isAndroid = win.navigator.appVersion.match(/android/gi);
+    //     var isIPhone = win.navigator.appVersion.match(/[iphone|ipad]/gi);
+    //     var devicePixelRatio = win.devicePixelRatio;
+
+    //     if(isIPhone) {
+    //       dpr = devicePixelRatio;
+    //     } else {
+    //       drp = 1;
+    //     }
+        
+    //     scale = 1 / dpr;
+    //   }
+
+    //   /**
+    //     * ================================================
+    //     *   设置data-dpr和viewport
+    //     × ================================================
+    //     */
+
+    //   docEl.setAttribute('data-dpr', dpr);
+    //   // 动态改写meta:viewport标签
+    //   if (!metaEl) {
+    //     metaEl = doc.createElement('meta');
+    //     metaEl.setAttribute('name', 'viewport');
+    //     metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    //     document.documentElement.firstElementChild.appendChild(metaEl);
+    //   } else {
+    //     metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    //   }
+
+    // })(document, window);
+    console.log(window.devicePixelRatio)
+    console.log(document.documentElement.clientWidth);
+    console.log(window.innerWidth);
+  </script>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</body>
+<script>
+  
+</script>
+</html>

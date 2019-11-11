@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <meta name='author' content='gaoxing'>
+  <title>🍋</title>
+  <style>
+     *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      -webkit-tap-highlight-color:transparent;
+    }
+    div{
+      margin: 0 auto;
+      width: 200px;
+    }
+    span{
+      background: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <div id="div">
+    <div>div</div>
+    <div>div2</div>
+    <span>aaaa</span>
+    <span>bbbbbb</span>
+  </div>
+</body>
+<script>
+  var divNode = document.querySelector("#div");
+  console.log(divNode.childNodes);
+  console.log(divNode.children);
+</script>
+</html>
